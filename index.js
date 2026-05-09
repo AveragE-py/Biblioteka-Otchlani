@@ -34,6 +34,32 @@ async function LoginWarningProcess() {
 
     const artwork = document.getElementById("artwork")
 
+    text.style.cursor = "pointer"
+
+    text.addEventListener("click", async () => {
+
+      const provider = new GoogleAuthProvider()
+
+      try {
+
+        await signInWithPopup(auth, provider)
+
+        alert("Zalogowano pomyślnie!")
+
+        location.reload()
+
+      } catch (error) {
+
+        console.error(error)
+
+        alert("Błąd logowania!")
+
+      }
+
+    })
+
+    const artwork = document.getElementById("artwork")
+
     if (artwork) {
       artwork.appendChild(div)
       div.appendChild(image)
