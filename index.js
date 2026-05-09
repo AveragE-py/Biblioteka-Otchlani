@@ -28,10 +28,9 @@ async function LoginWarningProcess() {
     const image = document.createElement("img")
     image.src = "/Ostrzeżenie.png"
 
-    const text = document.createElement("a")
+    const text = document.createElement("h3")
     text.textContent =
       "UWAGA! Użytkownik nie jest zalogowany! Przejdź do poniższej strony by się zalogować!"
-    text.href = "/Logowanie/"
 
     const artwork = document.getElementById("artwork")
 
