@@ -28,13 +28,10 @@ async function LoginWarningProcess() {
     const image = document.createElement("img")
     image.src = "/Ostrzeżenie.png"
 
-    const text = document.createElement("h3")
+    const text = document.createElement("a")
     text.textContent =
       "UWAGA! Użytkownik nie jest zalogowany! Przejdź do poniższej strony by się zalogować!"
-
-    const link = document.createElement("a")
-    link.href = "/Logowanie/"
-    link.textContent = "Logowanie"
+    text.href = "/Logowanie/"
 
     const artwork = document.getElementById("artwork")
 
@@ -42,7 +39,6 @@ async function LoginWarningProcess() {
       artwork.appendChild(div)
       div.appendChild(image)
       div.appendChild(text)
-      div.appendChild(link)
     }
   }
 }
