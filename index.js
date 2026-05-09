@@ -17,3 +17,33 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
 
+async function LoginWarningProcess() {
+  await auth.authStateReady()
+  const currentUser = auth.currentUser
+
+  if (!currentUser) {
+
+    const div = document.createElement("div")
+    div.className = "artwork-box"
+
+    const image = document.createElement("img")
+    image.src = "/Kot.png"
+
+    const text = document.createElement("h3")
+    text.textContent =
+      "UWAGA! Użytkownik nie jest zalogowany! Przejdź do poniższej strony by się zalogować!"
+
+    const link = document.createElement("a")
+    link.href = "/Logowanie/"
+    link.textContent = "Logowanie"
+
+    const artwork = document.getElementById("artwork")
+
+    if (artwork) {
+      artwork.appendChild(div)
+      div.appendChild(image)
+      div.appendChild(text)
+      div.appendChild(link)
+    }
+  }
+}
