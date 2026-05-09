@@ -32,8 +32,6 @@ async function LoginWarningProcess() {
     text.textContent =
       "UWAGA! Użytkownik nie jest zalogowany! Przejdź do poniższej strony by się zalogować!"
 
-    const artwork = document.getElementById("artwork")
-
     text.style.cursor = "pointer"
 
     text.addEventListener("click", async () => {
