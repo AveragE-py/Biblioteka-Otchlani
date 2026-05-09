@@ -2,7 +2,6 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.10.0/fireba
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/12.10.0/firebase-auth.js';
 import { getFirestore, doc, setDoc, getDoc, updateDoc, deleteDoc, collection, addDoc, getDocs, query, where, limit, onSnapshot } from 'https://www.gstatic.com/firebasejs/12.10.0/firebase-firestore.js';
 
-const db = getFirestore(app);
 const firebaseConfig = {
   apiKey: "AIzaSyCF0H2lWjApwC6W83fJD8WYekwhMTLOYEA",
   authDomain: "biblioteka-otchlani.firebaseapp.com",
