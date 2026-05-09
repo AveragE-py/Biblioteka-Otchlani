@@ -1,0 +1,82 @@
+body {
+  background-color: #F5E9BC;
+  font-family: Verdana;
+}
+
+.top {
+  background-color: rgb(236, 218, 146);
+  border: 6px;
+  border-style: outset;
+  text-align: center;
+  height: 120px;
+}
+
+.top h2 {
+  font-size: 28px;
+}
+
+.top h4 {
+  font-size: 20px;
+}
+
+.main {
+  margin-left: 100px;
+  margin-right: 100px;
+  border: 4px;
+  border-style: outset;
+}
+
+.title {
+  border: 6px;
+  border-style: outset;
+  text-align: center;
+}
+
+.artwork {
+}
+
+.artwork-box {
+  border: 6px;
+  border-style: outset;
+  display: flex;
+  text-align: center;
+}
+
+.page-content {
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 125%;
+}
+
+.page-content img {
+  display: block;
+  margin: auto;
+}
+
+.page-content-imagelink {
+  display: block;
+  margin: auto;
+  transition: transform .2s ease-out;
+}
+
+.page-content-imagelink:hover {
+   transform:scale(1.25);
+}
+
+.page-image-desc {
+   text-align: center;
+   vertical-align: middle;
+}
+
+.bottom {
+   gap: 30px;
+   margin-top: 15px;
+   height: 60px;
+   border: 6px;
+   border-style: outset;
+   display: flex;
+   text-align: center;
+   vertical-align: middle;
+}
