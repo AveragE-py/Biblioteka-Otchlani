@@ -27,7 +27,7 @@ async function LoginWarningProcess() {
     div.className = "artwork-box"
 
     const image = document.createElement("img")
-    image.src = "/Kot.png"
+    image.src = "/Ostrzeżenie.png"
 
     const text = document.createElement("h3")
     text.textContent =
