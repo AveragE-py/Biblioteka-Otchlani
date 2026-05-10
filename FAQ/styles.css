@@ -32,9 +32,10 @@ body {
   text-align: center;
 }
 
-.artwork {
+.title .login-info {
+  display: flex;
+  text-align: center;
 }
-
 .artwork-box {
   border: 6px;
   border-style: outset;

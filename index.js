@@ -63,7 +63,13 @@ async function LoginWarningProcess() {
       div.appendChild(image)
       div.appendChild(text)
     }
+
+  } else {
+    const user = firebase.auth().currentUser
+    const email = user.email;
+    document.getElementById("login").textContent = `Zalogowano jako ${email}`
   }
+  
 }
 
 LoginWarningProcess()

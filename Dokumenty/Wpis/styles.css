@@ -32,7 +32,9 @@ body {
   text-align: center;
 }
 
-.artwork {
+.title .login-info {
+  display: flex;
+  text-align: center;
 }
 
 .artwork-box {
